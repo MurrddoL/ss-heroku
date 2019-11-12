@@ -65,7 +65,7 @@ fi
 cat <<-EOF > /etc/shadowsocks-libev/config.json
 {
     "server":"127.0.0.1",
-    "server_port":"2333",
+    "server_port":"14521",
     "password":"${PASSWORD}",
     "timeout":300,
     "method":"${ENCRYPT}",
@@ -74,7 +74,7 @@ cat <<-EOF > /etc/shadowsocks-libev/config.json
     "reuse_port":true,
     "no_delay":true,
     "plugin": "v2ray-plugin",
-    "plugin_opts":"server;path=${V2_Path}"
+    "plugin_opts":"server;mux=0;path=${V2_Path}"
 }
 EOF
 
