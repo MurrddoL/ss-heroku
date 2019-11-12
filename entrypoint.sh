@@ -74,7 +74,7 @@ cat <<-EOF > /etc/shadowsocks-libev/config.json
     "reuse_port":true,
     "no_delay":true,
     "plugin": "v2ray-plugin",
-    "plugin_opts":"server;mux=0;path=${V2_Path}"
+    "plugin_opts":"server;mux=0;loglevel=none;path=${V2_Path}"
 }
 EOF
 
